@@ -21,8 +21,8 @@ for x in range(0, m):
 def dfs(v):
     print("Wierzchołek nr: ", v)
     was[v]=True
-    for x in range (0, len(gr[n])):
-        u = gr[n][x]
+    for x in range (0, len(gr[v])):
+        u = gr[v][x]
         if was[u] != True:
             dfs(u)
     return 
